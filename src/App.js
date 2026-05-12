@@ -7,7 +7,6 @@ const supabase = createClient(
   "sb_publishable_wH_ZY1su2l1ZBi_9BDeLnA_idudRa6W"
 );
 
-const ANTHROPIC_KEY = "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";
 const ANTHROPIC_KEY = process.env.REACT_APP_ANTHROPIC_KEY;
 const link = document.createElement("link");
 link.rel = "stylesheet";
