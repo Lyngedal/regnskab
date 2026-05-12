@@ -229,7 +229,7 @@ function Toast(props) {
   useEffect(function() {
     var t = setTimeout(props.onDone, 2800);
     return function() { clearTimeout(t); };
-  }, []);
+  }, [props.onDone]);
   return (
     <div style={{ position: "fixed", bottom: 80, left: "50%", transform: "translateX(-50%)", background: ink, color: "#fff", padding: "10px 22px", borderRadius: 99, fontFamily: ff.ui, fontWeight: 600, fontSize: 13, boxShadow: "0 8px 28px rgba(0,0,0,.18)", zIndex: 9999, whiteSpace: "nowrap", animation: "toastUp .22s ease" }}>
       {props.msg}
